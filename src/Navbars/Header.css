@@ -1,0 +1,61 @@
+/* styles.css */
+
+/* Style the Navbar */
+.navbar {
+    background-color: #343a40;
+    /* Dark background color */
+    padding: 10px 0;
+    /* Add some padding to the top and bottom */
+}
+
+/* Style the Navbar Brand */
+.navbar-brand {
+    font-size: 2rem;
+    /* Increase the font size for the brand/logo */
+    color: #ffffff;
+    /* Text color for the brand/logo */
+    text-decoration: none;
+    /* Remove underlines from the brand/logo */
+}
+
+/* Style the Navigation Links */
+.nav-link {
+    font-size: 1.2rem;
+    /* Font size for navigation links */
+    color: #ffffff;
+    /* Text color for navigation links */
+    margin-right: 20px;
+    /* Add some space between links */
+    text-decoration: none;
+    /* Remove underlines from links */
+}
+
+/* Add hover effect to navigation links */
+.nav-link:hover {
+    color: #f8f9fa;
+    /* Change text color on hover */
+}
+
+/* Style the navigation toggle button (for smaller screens) */
+.navbar-toggler-icon {
+    background-color: #ffffff;
+    /* Color of the toggle button icon */
+}
+
+/* Style the h2 and h5 elements within navigation links */
+.nav-link h2,
+.nav-link h5 {
+    margin: 0;
+    /* Remove any margin for h2 and h5 elements */
+}
+
+/* Add spacing below the header */
+.header-spacer {
+    height: 60px;
+    /* Adjust the height as needed */
+}
+
+.nav-link {
+    margin-right: 20px;
+    /* Increase the margin-right to add more spacing */
+}
