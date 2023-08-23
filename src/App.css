@@ -21,7 +21,12 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  width: 100%;
   color: white;
+  position: fixed;
+  top: 0;
+  transition: 0.2s
+  
 }
 
 .App-link {
@@ -36,3 +41,44 @@
     transform: rotate(360deg);
   }
 }
+
+.Product {
+  margin: 0px 50px 50px 50px;
+  padding: 20px 20px 40px 20px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background: #d4d4d4;
+  color: #023047;
+  border: 2px solid #023047;
+  border-radius: 10px;
+
+}
+
+.card-container {
+  margin: 20px 50px;
+  padding: 20px 20px 0px 20px;
+  border: 1px solid #023047 !important;
+  border-radius: 10px  !important;
+  background: #d3f7f8;
+  font-size: 0.05%;
+}
+
+.Cardimg {
+  border-radius: 5px !important;
+}
+
+.homepage {
+  margin: 0px 10px;
+  padding: 0px 30px;
+  display: block;
+}
+
+
+
+/* .btn btn-primary {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #97d8f8;
+} */
