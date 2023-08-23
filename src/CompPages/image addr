@@ -1,0 +1,22 @@
+const Library = () => {
+    const [data] = useState([
+        {
+            id: 1,
+            name: 'Product 1',
+            description: 'This is the description for Product 1.',
+            imageUrl: 'https://www.harpercollins.com/cdn/shop/products/9780008352479.jpg?v=1691003064&width=350',
+        },
+        {
+            id: 2,
+            name: 'Product 2',
+            description: 'This is the description for Product 2.',
+            imageUrl: 'https://cdn.kobo.com/book-images/233196f9-1586-481b-8e71-f8d08357337b/1200/1200/False/meditations-41.jpg',
+        },
+        {
+            id: 3,
+            name: 'Product 3',
+            description: 'This is the description for Product 3.',
+            imageUrl: 'https://m.media-amazon.com/images/I/41LmPEurOOL.jpg',
+        },
+        // Add more sample data here as needed
+    ]);

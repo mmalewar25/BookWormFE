@@ -5,29 +5,33 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Nopage } from './CompPages/Nopage';
-import Header from "./Header";
+import Header from "./Navbars/Header";
 import HomePage from "./CompPages/HomePage";
 import Product from "./CompPages/Product";
 import Cardpg2 from "./CompPages/Cardpg2";
 import EbookShowByCard from "./CompPages/EbookShowByCard";
 import Music from "./CompPages/Music";
 import Videos from "./CompPages/Videos";
+import Account from './CompPages/Account';
+import Library from './CompPages/Library';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <BrowserRouter>
+    <BrowserRouter>
       <Routes>
-        <Route path = "/" element = {<App />}>
-          <Route path = "Header" element = {<Header />}/>
-          <Route path = "home" element = {<HomePage/>}/>
-          <Route path = "HomePage" element = {<HomePage/>}/>
-          <Route path = "Product" element = {<Product />}/>
-          <Route path = "Cardpg2" element = {<Cardpg2 />}/>
-          <Route path = "EbookShowByCard" element = {<EbookShowByCard />}/>
-          <Route path = "Music" element = {<Music />}/>
-          <Route path = "Videos" element = {<Videos />}/>
-          <Route path = "*" element = {<Nopage />} />
+        <Route path="/" element={<App />}>
+          <Route path="Header" element={<Header />} />
+          <Route path="home" element={<HomePage />} />
+          <Route path="HomePage" element={<HomePage />} />
+          <Route path="Product" element={<Product />} />
+          <Route path="Cardpg2" element={<Cardpg2 />} />
+          <Route path="EbookShowByCard" element={<EbookShowByCard />} />
+          <Route path="Music" element={<Music />} />
+          <Route path="Videos" element={<Videos />} />
+          <Route path="Account" element={<Account />} />
+          <Route path="Library" element={<Library />} />
+          <Route path="*" element={<Nopage />} />
         </Route>
       </Routes>
     </BrowserRouter>
