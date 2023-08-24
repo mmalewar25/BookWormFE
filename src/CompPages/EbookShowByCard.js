@@ -13,7 +13,7 @@ function EbookShowByCard() {
   const [Products, setProducts] = useState([]);
 
   const init = () => {
-    fetch("https://fakestoreapi.com/products")
+    fetch("https://example-data.draftbit.com/books")
       .then((res) => res.json())
       .then((result) => {
         setProducts(result);

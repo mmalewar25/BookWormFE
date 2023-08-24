@@ -25,8 +25,18 @@
   color: white;
   position: fixed;
   top: 0;
-  transition: 0.2s
+  transition: 0.2s;
   
+}
+
+.Headermain {
+  padding-bottom: 0px;
+  margin-bottom: -25px;
+}
+
+.Navproduct {
+  padding-top: 5px !important;
+  margin-top: 0px !important;
 }
 
 .App-link {
@@ -43,22 +53,25 @@
 }
 
 .Product {
-  margin: 0px 50px 50px 50px;
+  margin: 30px 50px 70px 50px;
   padding: 20px 20px 40px 20px;
   display: flex;
   justify-content: space-around;
   text-align: center;
-  background: #d4d4d4;
   color: #023047;
   border: 2px solid #023047;
   border-radius: 10px;
+  background-image: url("D:\VITA\Project\Frontend\project\public\Images\Productbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: 'rgba(0, 0, 0, 0.5)'!important;
 
 }
 
 .card-container {
-  margin: 20px 50px;
+  margin: 20px 20px;
   padding: 20px 20px 0px 20px;
-  border: 1px solid #023047 !important;
+  border: 1.5px solid #023047 !important;
   border-radius: 10px  !important;
   background: #d3f7f8;
   font-size: 0.05%;
@@ -66,19 +79,78 @@
 
 .Cardimg {
   border-radius: 5px !important;
+  border: 0px solid #023047 !important;
 }
 
 .homepage {
-  margin: 0px 10px;
+  margin: 30px 10px 0px 0px;
   padding: 0px 30px;
-  display: block;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
 }
 
+.LanguagePage {
+  margin: 0px 50px 70px 50px;
+}
 
+.card-img-animation{
+  transition: transform 0.3s ease-in-out;
+  object-fit: cover;
+  height: 250px;
+  width: 100%;
+  border-radius: 5px !important;
+}
 
-/* .btn btn-primary {
+.card-img-animation:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  background-color: rgb(211, 212, 212)  !important;
+  width: 100%;
+  bottom: 0;
+  font-size: 16px;
+}
+
+.Search {
+  margin: 10px 40px 30px 40px;
+}
+
+.contactus{
+  margin: 20px 40px 60px 40px !important;
+}
+
+.aboutus {
+  margin: 20px 40px 80px 40px !important;
+}
+
+.feedback-container {
+  background: url("D:\VITA\Project\Frontend\project\public\Images\feedback.jpg") no-repeat center center fixed;
+  background-size: cover;
   display: flex;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  color: #97d8f8;
-} */
+  margin-top: 0px;
+  padding: 26px;
+}
+
+.feedback-card {
+  width: 50rem;
+  background-color: rgba(128, 128, 128, 0.7);
+  border: 10pt;
+  border-radius: 13pt;
+}
+
+.feedback-card-body {
+  color: white;
+}
+
+.feedback-label {
+  color: white;
+}
+
+.feedback-submit-button {
+  display: flex;
+  justify-content: center;
+}
