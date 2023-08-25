@@ -83,12 +83,22 @@
 }
 
 .homepage {
-  margin: 30px 10px 0px 10px;
-  padding: 0px 30px;
-  background-image: url("D:\VITA\Project\Frontend\project\public\Images\Productbg.jpg");
+  margin:0px;
+  padding: 50px 30px 400px 30px;
+  background-image: url("D:\VITA\Project\Frontend\project\public\Images\HomePage.jpeg") ;
   background-size: cover;
+  background-repeat: no-repeat;
+  color: hsl(0, 0%, 100%);
 }
 
+.homepage-container {
+  margin:0px;
+  padding: 50px 30px 400px 30px;
+}
+
+.homepage h1 {
+  color: hsl(0, 0%, 100%);
+}
 
 .LanguagePage {
   margin: 0px 50px 70px 50px;

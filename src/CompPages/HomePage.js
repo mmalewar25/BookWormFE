@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const HomePage = () => {
   return (
-    <div>
       <div className="homepage">
         <div className="row">
             <div class="homepage-container">
@@ -16,7 +15,6 @@ export const HomePage = () => {
             </div>
         </div>
       </div>
-    </div>
   );
 };
 
