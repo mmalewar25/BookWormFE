@@ -83,12 +83,12 @@
 }
 
 .homepage {
-  margin: 30px 10px 0px 0px;
+  margin: 30px 10px 0px 10px;
   padding: 0px 30px;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
+  background-image: url("D:\VITA\Project\Frontend\project\public\Images\Productbg.jpg");
+  background-size: cover;
 }
+
 
 .LanguagePage {
   margin: 0px 50px 70px 50px;

@@ -6,8 +6,7 @@ export const HomePage = () => {
     <div>
       <div className="homepage">
         <div className="row">
-          <div className="col-md-6">
-            <div class="content-container">
+            <div class="homepage-container">
               <h1>Welcome to BookWorm</h1>
               <p>
                 We offer you a wide range of eBooks to suit your needs. Explore
@@ -15,17 +14,6 @@ export const HomePage = () => {
               </p>
               {/* <button className="btn btn-secondary">Browse eBooks</button> */}
             </div>
-          </div>
-          <div className="col-md-6">
-            <br></br>
-            <div class="content-container">
-              <img
-                src="./Images/HomePage.jpeg"
-                alt="Homepage Image"
-                className="img-fluid"
-              />
-            </div>
-          </div>
         </div>
       </div>
     </div>
