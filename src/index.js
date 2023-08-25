@@ -17,6 +17,8 @@ import Search from "./CompPages/Search";
 import Aboutus from "./CompPages/Aboutus";
 import Contactus from "./CompPages/Contactus";
 import Marathipro from "./CompPages/Marathipro";
+import Account from './CompPages/Account';
+import Library from './CompPages/Library';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -37,6 +39,8 @@ root.render(
           <Route path = "Feedback" element = {<Feedback />}/>
           <Route path = "Search" element = {<Search />}/>
           <Route path = "Marathipro" element = {<Marathipro />}/>
+          <Route path="Account" element={<Account />} />
+          <Route path="Library" element={<Library />} />
           <Route path = "*" element = {<Nopage />} />
         </Route>
       </Routes>
