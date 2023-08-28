@@ -1,5 +1,5 @@
-import Header from "./Navbars/Header";
-import Footer from "./Navbars/Footer";
+import Header from "./CompPages/Navbars/Header";
+import Footer from "./CompPages/Navbars/Footer";
 import { Outlet } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';

@@ -26,7 +26,7 @@
   position: fixed;
   top: 0;
   transition: 0.2s;
-  
+
 }
 
 .Headermain {
@@ -47,6 +47,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -61,10 +62,10 @@
   color: #023047;
   border: 2px solid #023047;
   border-radius: 10px;
-  background-image: url("D:\VITA\Project\Frontend\project\public\Images\Productbg.jpg");
+  background-image: url("../public/Images/Productbg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: 'rgba(0, 0, 0, 0.5)'!important;
+  background-color: 'rgba(0, 0, 0, 0.5)' !important;
 
 }
 
@@ -72,7 +73,7 @@
   margin: 20px 20px;
   padding: 20px 20px 0px 20px;
   border: 1.5px solid #023047 !important;
-  border-radius: 10px  !important;
+  border-radius: 10px !important;
   background: #d3f7f8;
   font-size: 0.05%;
 }
@@ -83,17 +84,21 @@
 }
 
 .homepage {
-  margin:0px;
-  padding: 50px 30px 400px 30px;
-  background-image: url("D:\VITA\Project\Frontend\project\public\Images\HomePage.jpeg") ;
+  margin: 0px;
+  background-image: url("../public/Images/HomePage.jpeg");
   background-size: cover;
+  height: 520px;
+  width: 100%;
   background-repeat: no-repeat;
   color: hsl(0, 0%, 100%);
 }
 
 .homepage-container {
-  margin:0px;
-  padding: 50px 30px 400px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  padding: 110px 20px 20px 50px;
 }
 
 .homepage h1 {
@@ -104,7 +109,7 @@
   margin: 0px 50px 70px 50px;
 }
 
-.card-img-animation{
+.card-img-animation {
   transition: transform 0.3s ease-in-out;
   object-fit: cover;
   height: 250px;
@@ -117,7 +122,7 @@
 }
 
 .footer {
-  background-color: rgb(211, 212, 212)  !important;
+  background-color: rgb(211, 212, 212) !important;
   width: 100%;
   bottom: 0;
   font-size: 16px;
@@ -127,7 +132,7 @@
   margin: 10px 40px 30px 40px;
 }
 
-.contactus{
+.contactus {
   margin: 20px 40px 60px 40px !important;
 }
 
@@ -136,7 +141,7 @@
 }
 
 .feedback-container {
-  background: url("D:\VITA\Project\Frontend\project\public\Images\feedback.jpg") no-repeat center center fixed;
+  background: url("../public/Images/feedback.jpg") no-repeat center center fixed;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -165,3 +170,156 @@
   justify-content: center;
 }
 
+.accountbg {
+  background-image: url("D:\VITA\Project\Frontend\project\public\Images\accountbg.jpeg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  margin-bottom: 0px;
+  padding: 50px 20px 150px 20px;
+}
+
+.account {
+  background-color: #e4e5e7;
+  padding: 20px 20px 0px 20px;
+  border: 2px solid #104972;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+}
+
+.account h2 {
+  color: #333;
+}
+
+.account p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.account p strong {
+  font-weight: bold;
+}
+
+.account p strong::after {
+  content: ':';
+}
+
+.account p strong+span {
+  color: #28a745;
+  /* Green color for premium users */
+}
+
+.account p strong+span::before {
+  content: 'Yes';
+  font-weight: bold;
+  color: #28a745;
+}
+
+.account p strong+span::after {
+  content: 'No';
+  font-weight: bold;
+  color: #dc3545;
+  /* Red color for non-premium users */
+}
+
+/* Button styling */
+.account button {
+  margin: 20px 20px 30px 20px;
+  padding: 10px 20px;
+  background-color: #73787e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.account button:hover {
+  background-color: #0056b3;
+}
+
+/* Library.css (Updated CSS file) */
+
+.library {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.library h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.library-card-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.library-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  width: 200px;
+  /* Set a fixed width for the cards */
+  height: 400px;
+  /* Set a fixed height for the cards */
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  /* Stack image and details vertically */
+  align-items: center;
+  /* Center-align contents horizontally */
+}
+
+.image-container {
+  width: 100%;
+  max-width: 200px;
+  /* Set the max width for image containers */
+  margin: 0 auto;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.product-details {
+  align-items: flex-end;
+  flex: 1;
+  /* Allow details to grow/shrink as needed within the card */
+}
+
+.product h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.product p {
+  color: #555;
+  font-size: 1rem;
+  /* Set a consistent font size for descriptions */
+}
+
+/* Hover effect on product cards */
+.library-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

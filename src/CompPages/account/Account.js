@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './Account.css';
 
 const Account = ({ user, onLogout, onTogglePremium }) => {
     const [isPremium, setIsPremium] = useState(user.isPremium);

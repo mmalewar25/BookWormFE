@@ -47,7 +47,7 @@ function EbookShowByCard() {
                   <Card.Img
                     style={{ maxHeight: '200px', width: 'auto' }}
                     variant="top"
-                    src={prod.image}
+                    src={prod.image_url}
                   />
                 </div>
                 <Card.Body className="d-flex flex-column justify-content-between">

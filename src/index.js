@@ -5,20 +5,21 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Nopage } from './CompPages/Nopage';
-import Header from "./Navbars/Header";
-import HomePage from "./CompPages/HomePage";
-import Product from "./CompPages/Product";
-import LanguagePage from "./CompPages/LanguagePage";
-import EbookShowByCard from "./CompPages/EbookShowByCard";
-import Music from "./CompPages/Music";
-import Videos from "./CompPages/Videos";
-import Feedback from "./CompPages/Feedback";
-import Search from "./CompPages/Search";
-import Aboutus from "./CompPages/Aboutus";
-import Contactus from "./CompPages/Contactus";
-import Marathipro from "./CompPages/Marathipro";
-import Account from './CompPages/Account';
-import Library from './CompPages/Library';
+import Header from "./CompPages/Navbars/Header";
+import Home from "./CompPages/Home/Home";
+import Product from "./CompPages/product/Product";
+import LanguagePage from "./CompPages/product/LanguagePage";
+import EbookShowByCard from "./CompPages/product/EbookShowByCard";
+import Music from "./CompPages/product/Music";
+import Videos from "./CompPages/product/Videos";
+import Feedback from "./Feedback";
+import Search from "./CompPages/Navbars/Search";
+import Aboutus from "./Aboutus";
+import Contactus from "./Contactus";
+import Account from './CompPages/account/Account';
+import Library from './CompPages/library/Library';
+import Myshelf from './CompPages/shelf/Myshelf';
+import SignIn from './CompPages/signin/SignIn';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -27,9 +28,9 @@ root.render(
       <Routes>
         <Route path = "/" element = {<App />}>
           <Route path = "Header" element = {<Header />}/>
-          <Route path = "home" element = {<HomePage/>}/>
-          <Route path = "HomePage" element = {<HomePage/>}/>
+          <Route path = "Home" element = {<Home/>}/>
           <Route path = "Product" element = {<Product />}/>
+          <Route path = "SignIn" element = {<SignIn />}/>
           <Route path = "LanguagePage" element = {<LanguagePage />}/>
           <Route path = "EbookShowByCard" element = {<EbookShowByCard />}/>
           <Route path = "Music" element = {<Music />}/>
@@ -38,7 +39,7 @@ root.render(
           <Route path = "Contactus" element = {<Contactus />}/>
           <Route path = "Feedback" element = {<Feedback />}/>
           <Route path = "Search" element = {<Search />}/>
-          <Route path = "Marathipro" element = {<Marathipro />}/>
+          <Route path="Myshelf" element={<Myshelf />} />
           <Route path="Account" element={<Account />} />
           <Route path="Library" element={<Library />} />
           <Route path = "*" element = {<Nopage />} />
